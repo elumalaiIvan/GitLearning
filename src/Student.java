@@ -5,7 +5,7 @@ public class Student {
         this.rollNumber = rollNumber;
         this.age = age;
         this.dep = dep;
-        this.totalMark = totalMark;
+
     }
 
     String name;
@@ -13,7 +13,7 @@ public class Student {
     int age;
     String dep;
 
-    Integer totalMark;
+
 
     public void printGrade() {
         Character grade;
