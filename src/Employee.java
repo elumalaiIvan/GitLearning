@@ -1,14 +1,11 @@
-public class Employee {
+public class Employee extends Person  {
   private int id;
-  private String name;
-  private int age;
   private String role;
   private double salary;
 
-  public Employee(int id, String name, int age, String role, double salary) {
+  public Employee(int id, String name, int age, String gender, String role, double salary) {
+    super(name, age, gender);
     this.id = id;
-    this.name = name;
-    this.age = age;
     this.role = role;
     this.salary = salary;
   }
@@ -17,20 +14,18 @@ public class Employee {
     return id;
   }
 
-  public String getName() {
-    return name;
-  }
-
-  public int getAge() {
-    return age;
-  }
-
   public String getRole() {
     return role;
   }
 
   public double getSalary() {
     return salary;
+  }
+
+  public void displayEmployeeDetails() {
+    System.out.println("id: " + id);
+    System.out.println("role: " + role);
+    System.out.println("salary: " + salary);
   }
 }
 

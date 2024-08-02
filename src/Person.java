@@ -3,16 +3,16 @@ public class Person {
     private int age;
     private String gender;
 
-    public void Person(String name, int age, String gender) {
+    public Person(String name, int age, String gender) {
         this.name = name;
         this.age = age;
         this.gender = gender;
     }
 
-    public void displayPerson() {
-        System.out.println("Name: " + name);
-        System.out.println("Age: " + age);
-        System.out.println("Gender: " + gender);
+    public void displayBasicDetails() {
+        System.out.println("name: " + name);
+        System.out.println("age: " + age);
+        System.out.println("gender: " + gender);
     }
 
     public String getName() {
