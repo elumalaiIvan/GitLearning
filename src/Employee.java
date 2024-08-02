@@ -1,19 +1,36 @@
 public class Employee {
-  public  String name;
-  String role;
-  public int age;
-  double salary;
-  int bonus;
+  private int id;
+  private String name;
+  private int age;
+  private String role;
+  private double salary;
 
-public int getbonus  (int age)
-{
-  int bonus=0;
-  if(age==30)
-    bonus=10000;
-    if (age==20)
-      bonus=5000;
-    return bonus;
+  public Employee(int id, String name, int age, String role, double salary) {
+    this.id = id;
+    this.name = name;
+    this.age = age;
+    this.role = role;
+    this.salary = salary;
+  }
 
+  public int getId() {
+    return id;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public int getAge() {
+    return age;
+  }
+
+  public String getRole() {
+    return role;
+  }
+
+  public double getSalary() {
+    return salary;
+  }
 }
 
-}
