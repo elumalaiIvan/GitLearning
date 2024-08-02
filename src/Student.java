@@ -1,15 +1,10 @@
-import org.w3c.dom.ls.LSOutput;
-
 public class Student {
-
     private String name;
     private int age;
     private char gender;
-    private String grade;
+    private int grade;
 
-
-    public Student(String name, int age, char gender, String grade) {
-
+    public Student(String name, int age, char gender, int grade) {
         this.name = name;
         this.age = age;
         this.gender = gender;
@@ -40,11 +35,11 @@ public class Student {
         this.gender = gender;
     }
 
-    public String getGrade() {
+    public int getGrade() {
         return grade;
     }
 
-    public void setGrade(String grade) {
+    public void setGrade(int grade) {
         this.grade = grade;
     }
 }

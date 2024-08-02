@@ -21,7 +21,7 @@ Kani.role = "Developer";
 System.out.println(nive.role);
 System.out.println(Kani.role);
 
-        Student a1 = new Student("KAVI", 6, 'F', "1st");
+        Student a1 = new Student("KAVI", 6, 'F', 1);
 
         System.out.println("Name: " + (a1.getName()));
         System.out.println("Age: " + (a1.getAge()));
