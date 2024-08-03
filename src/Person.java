@@ -1,6 +1,11 @@
 public class Person {
     private String name;
     private int age;
+
+    public String getGender() {
+        return gender;
+    }
+
     private String gender;
 
     public Person(String name, int age, String gender) {
@@ -10,6 +15,8 @@ public class Person {
     }
 
     public void displayBasicDetails() {
+        System.out.println("Person specific details");
+
         System.out.println("name: " + name);
         System.out.println("age: " + age);
         System.out.println("gender: " + gender);

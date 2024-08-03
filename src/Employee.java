@@ -22,7 +22,16 @@ public class Employee extends Person  {
     return salary;
   }
 
-  public void displayEmployeeDetails() {
+
+//  same signature in different class in parent child relationship is a run time polymorphism
+ @Override
+  public void displayBasicDetails() {
+   super.displayBasicDetails();
+   System.out.println("Employee specific details");
+   displayEmployeeDetails();
+  }
+
+  private void displayEmployeeDetails() {
     System.out.println("id: " + id);
     System.out.println("role: " + role);
     System.out.println("salary: " + salary);

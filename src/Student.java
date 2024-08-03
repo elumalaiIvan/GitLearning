@@ -8,7 +8,14 @@ public class Student extends Person {
         this.grade = grade;
     }
 
-    public void displayStudentDetails() {
+    @Override
+    public void displayBasicDetails() {
+        super.displayBasicDetails();
+        System.out.println("Student specific details");
+        displayStudentDetails();
+    }
+
+    private void displayStudentDetails() {
         System.out.println("id: " + id);
         System.out.println("grade: " + grade);
 
